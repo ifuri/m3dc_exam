@@ -1,0 +1,79 @@
+@charset "UTF-8";
+.error_msg{
+	color:red;
+	padding:5px 0px 5px 10px;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin:0;
+	padding:0;
+	line-height:100%;
+        font-family: verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+
+}
+#sidebar-wrapper {
+	top: 46px;
+	left: -200px;
+	width: 200px;
+	background-color: #f1f1f1;
+	color: #000;
+	position: fixed;
+	height: 100%;
+	z-index: 1;
+}
+.sidebar-nav {
+	position: absolute;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	list-style: none;
+}
+.sidebar-nav li {
+	text-indent: 20px;
+	line-height: 50px;
+}
+.sidebar-nav li a {
+	color: black;
+	display: block;
+	text-decoration: none;
+}
+.sidebar-nav li a:hover:not(.active) {
+	background: rgba(125,125,125,0.5);
+	color: white;
+	text-decoration: none;
+}
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+	background-color: #4CAF50;
+    color: white;
+	text-decoration: none;
+}
+#sidebar-wrapper.sidebar-toggle {
+	transition: all 0.3s ease-out;
+	margin-left: -200px;
+}
+@media (min-width: 768px) {
+	#sidebar-wrapper.sidebar-toggle {
+		transition: 0s;
+		left: 200px;
+	}
+}
+.kowafooter {
+	margin-left: 200px;
+}
+.error_message{
+	color: #d00;
+}
+
+.gaiyo{
+	display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
