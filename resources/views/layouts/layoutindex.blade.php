@@ -34,11 +34,11 @@
             </div>
         </nav>
         <div style="margin-bottom: 100px"></div>
-     </header>
+    </header>
 
-     <div>
-         @yield('content')
-     </div>
+    <div>
+        @yield('content')
+    </div>
 
 </body>
 
