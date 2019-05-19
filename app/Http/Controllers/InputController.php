@@ -36,7 +36,8 @@ class InputController extends Controller
         //ファイル名YYYY_MM_DD_HH:MM:SSで動かすことができませんでした。
         //':'があるとパーミッション操作が正常に動かないので、
         //'_'に置き換えて実装させて頂きます
-        $log_path       = base_path() . '/logs/' . date("Y_m_d_H_i_s") . '.log';        $log_level      = config('info');
+        $log_path       = base_path() . '/logs/' . date("Y_m_d_H_i_s") . '.log';
+        $log_level      = config('info');
         $bubble         = true;
         $filePermission = 0777;
 
